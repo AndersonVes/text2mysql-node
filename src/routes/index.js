@@ -1,5 +1,6 @@
 import express from "express";
 import stores from "./storesRoutes.js";
+import transactions from "./transactionsRoutes.js";
 
 const routes = (app) => {
     app.route('/').get((req, res) => {
@@ -9,6 +10,7 @@ const routes = (app) => {
     app.use(
         express.json(),
         stores,
+        transactions
     )
 }
 
