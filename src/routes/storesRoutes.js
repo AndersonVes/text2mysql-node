@@ -5,5 +5,6 @@ const router = express.Router();
 
 router
     .get("/stores", StoresController.listStores)
+    .post("/stores", StoresController.insertStore)
 
 export default router

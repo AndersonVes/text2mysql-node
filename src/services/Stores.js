@@ -8,10 +8,25 @@ class Stores {
         return new Promise(data => {
             db.query(sql, function (error, results) {
                 if (error) throw error
-                data(results)
+                else {
+                    data(results)
+                    console.log("Select All Stores");
+                }
             });
         })
+    }
 
+    static insert = (object) => {
+        var sql = 'INSERT INTO desafio_dev.store SET ?'
+        return new Promise(data => {
+            db.query(sql, object, function (error, results, fields) {
+                if (error) throw error;
+                else {
+                    data({ insertId: results.insertId })
+                    console.log({ storeInsertId: results.insertId });
+                }
+            });
+        })
     }
 }
 
