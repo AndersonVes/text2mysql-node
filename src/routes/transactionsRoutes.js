@@ -5,6 +5,5 @@ const router = express.Router();
 
 router
     .get("/transactions", TransactionsController.listTransactions)
-    .post("/transactions", TransactionsController.insertTransaction)
-
+    
 export default router
