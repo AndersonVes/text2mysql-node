@@ -23,7 +23,6 @@ class Stores {
                 if (error) throw error;
                 else {
                     data({ insertId: results.insertId })
-                    console.log({ storeInsertId: results.insertId });
                 }
             });
         })
