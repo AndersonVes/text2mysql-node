@@ -12,8 +12,10 @@
   "author": "AndersonVes",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
