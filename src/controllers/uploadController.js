@@ -61,9 +61,8 @@ class UploadController {
 
 
             transactions.insert({
-                "Effect": uploadHelper.getEfffect(line.slice(0, 1)),
                 "Type": line.slice(0, 1),
-                "Value": line.slice(9, 18),
+                "Value": uploadHelper.getEfffect(line.slice(0, 1),line.slice(9, 18)),
                 "Cpf": line.slice(19, 29),
                 "Card": line.slice(30, 41),
                 "Datetime": uploadHelper.formatDatetime(line.slice(1, 8), line.slice(42, 47)),

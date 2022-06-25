@@ -1,10 +1,11 @@
 class UploadHelper {
-    static getEfffect = (type) => {
+    static getEfffect = (type, value) => {
         type = parseInt(type)
+        value = parseInt(value)
         if(type === 2 || type === 3 || type === 9)
-            return 0
+            return value - (value*2)
 
-        return 1
+        return value
     }
 
     static formatDatetime(date, time) {
