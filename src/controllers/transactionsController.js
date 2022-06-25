@@ -6,6 +6,12 @@ class TransactionsController {
        
         let ret = await transactions.findAll()
         res.status(200).send(ret)
+    } 
+    
+    static getBalances = async (req, res) => {
+       
+        let ret = await transactions.getBalances()
+        res.status(200).send(ret)
     }
 
     static insertTransaction = async (req, res) => {

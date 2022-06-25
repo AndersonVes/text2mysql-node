@@ -5,5 +5,6 @@ const router = express.Router();
 
 router
     .get("/transactions", TransactionsController.listTransactions)
+    .get("/transactions/balances", TransactionsController.getBalances)
     
 export default router
