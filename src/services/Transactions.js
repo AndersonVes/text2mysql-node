@@ -10,7 +10,6 @@ class Transactions {
                 if (error) throw error
                 else {
                     data(results)
-                    console.log("Select All Transactions");
                 }
             });
         })

@@ -52,7 +52,6 @@ class UploadController {
                 inserteds.push({ Name: line.slice(62), Id: newStore.insertId })
             }
         }
-        console.log(recordIds);
 
 
         fileArray.forEach((line, i) => {

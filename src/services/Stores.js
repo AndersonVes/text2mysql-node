@@ -10,7 +10,6 @@ class Stores {
                 if (error) throw error
                 else {
                     data(results)
-                    console.log("Select All Stores");
                 }
             });
         })
